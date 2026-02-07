@@ -29,12 +29,12 @@ section[id] {
 }
 
 /* ============= BASE LAYOUT ============= */
-.container-solar-system {
+.container-powercable {
   width: min(92vw, var(--container-w-solar));
   margin-inline: auto;
 }
 
-.section-hero-solar-system {
+.section-hero-powercable {
   position: relative;
   background: white;
   padding-top: 3vw;
@@ -42,20 +42,20 @@ section[id] {
   padding-top: 75px;
 }
 
-.grid-hero-solar-system {
+.grid-hero-powercable {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
   gap: clamp(24px, 4vw, 48px);
   align-items: center;
 }
 
-.hero-left-solar-system {}
+.hero-left-powercable {}
 
-.hero-right-solar-system {
+.hero-right-powercable {
   justify-self: end;
 }
 
-.hero-title-solar-system {
+.hero-title-powercable {
   font-size: clamp(32px, 5vw, 56px);
   line-height: 1.05;
   letter-spacing: .2px;
@@ -64,23 +64,23 @@ section[id] {
   font-weight: 800;
 }
 
-.accent-solar-system {
+.accent-powercable {
   color: var(--teal-700-solar);
 }
 
-.hero-sub-solar-system {
+.hero-sub-powercable {
   color: var(--muted-solar);
   margin: 0 0 26px;
   font-size: clamp(15px, 1.8vw, 18px);
 }
 
-.hero-cta-solar-system {
+.hero-cta-powercable {
   display: flex;
   gap: 12px;
 }
 
-.btn-primary-solar-system,
-.btn-ghost-solar-system {
+.btn-primary-powercable,
+.btn-ghost-powercable {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -92,28 +92,28 @@ section[id] {
   transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
 }
 
-.btn-primary-solar-system {
+.btn-primary-powercable {
   background: linear-gradient(135deg, var(--teal-700-solar), var(--cyan-800-solar));
   color: var(--white-solar);
   box-shadow: var(--shadow-soft-solar);
 }
 
-.btn-primary-solar-system:hover {
+.btn-primary-powercable:hover {
   transform: translateY(-2px);
 }
 
-.btn-ghost-solar-system {
+.btn-ghost-powercable {
   background: transparent;
   border-color: var(--cyan-800-solar);
   color: var(--cyan-800-solar);
 }
 
-.btn-ghost-solar-system:hover {
+.btn-ghost-powercable:hover {
   background: var(--cyan-800-solar);
   color: var(--white-solar);
 }
 
-.hero-img-solar-system {
+.hero-img-powercable {
   width: min(520px, 40vw);
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -122,7 +122,7 @@ section[id] {
   display: block;
 }
 
-.hero-band-solar-system {
+.hero-band-powercable {
   display: none;
   position: absolute;
   left: 50%;
@@ -137,14 +137,14 @@ section[id] {
   z-index: 0;
 }
 
-.hero-right-solar-system,
-.hero-left-solar-system {
+.hero-right-powercable,
+.hero-left-powercable {
   position: relative;
   z-index: 1;
 }
 
 /* Trusted section */
-.section-trusted-solar-system {
+.section-trusted-powercable {
   background: #0f1b2a;
   /* deep slate like your screenshot */
   color: #fff;
@@ -152,7 +152,7 @@ section[id] {
   margin-top: clamp(28px, 6vw, 60px);
 }
 
-.trusted-heading-solar-system {
+.trusted-heading-powercable {
   text-align: center;
   font-size: clamp(18px, 2.2vw, 24px);
   font-weight: 800;
@@ -161,7 +161,7 @@ section[id] {
 }
 
 /* Logo carousel */
-.logos-wrap-solar-system {
+.logos-wrap-powercable {
   overflow: hidden;
   position: relative;
   padding: 6px 0;
@@ -171,20 +171,20 @@ section[id] {
   border-radius: 0;
 }
 
-.logos-track-solar-system {
+.logos-track-powercable {
   display: inline-flex;
   align-items: center;
   gap: clamp(28px, 4vw, 46px);
   padding-inline: 12px;
-  animation: marquee-solar-system 28s linear infinite;
+  animation: marquee-powercable 28s linear infinite;
   will-change: transform;
 }
 
-.logos-wrap-solar-system:hover .logos-track-solar-system {
+.logos-wrap-powercable:hover .logos-track-powercable {
   animation-play-state: paused;
 }
 
-.logo-item-solar-system {
+.logo-item-powercable {
   height: clamp(22px, 3.2vw, 34px);
   width: auto;
   opacity: .9;
@@ -192,12 +192,12 @@ section[id] {
   transition: opacity .2s ease, transform .2s ease;
 }
 
-.logo-item-solar-system:hover {
+.logo-item-powercable:hover {
   opacity: 1;
   transform: translateY(-2px);
 }
 
-@keyframes marquee-solar-system {
+@keyframes marquee-powercable {
   from {
     transform: translateX(0);
   }
@@ -210,14 +210,14 @@ section[id] {
 
 
 /* --- DOTS (pagination) --- */
-.dots-solar-system {
+.dots-powercable {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: clamp(10px, 2vw, 14px);
 }
 
-.dot-solar-system {
+.dot-powercable {
   width: 6px;
   height: 6px;
   background: rgba(255, 255, 255, .35);
@@ -226,32 +226,32 @@ section[id] {
   transition: transform .15s ease, background .2s ease;
 }
 
-.dot-solar-system.is-active-solar-system {
+.dot-powercable.is-active-powercable {
   background: rgba(255, 255, 255, .85);
   transform: scale(1.15);
 }
 
 /* ============= SCROLL REVEAL ============= */
-.reveal-solar-system {
+.reveal-powercable {
   opacity: 0;
   transform: translateY(28px) scale(.98);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
     transform .7s cubic-bezier(.2, .65, .2, 1);
 }
 
-.in-view-solar-system {
+.in-view-powercable {
   opacity: 1 !important;
   transform: translateY(0) scale(1) !important;
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .logos-track-solar-system {
+  .logos-track-powercable {
     animation: none;
   }
 
-  .reveal-solar-system,
-  .in-view-solar-system {
+  .reveal-powercable,
+  .in-view-powercable {
     transition: none;
     transform: none;
     opacity: 1;
@@ -260,21 +260,21 @@ section[id] {
 
 /* ============= RESPONSIVE ============= */
 @media (max-width: 960px) {
-  .grid-hero-solar-system {
+  .grid-hero-powercable {
     grid-template-columns: 1fr;
   }
 
-  .hero-right-solar-system {
+  .hero-right-powercable {
     justify-self: start;
   }
 
-  .hero-img-solar-system,
-  .hero-band-solar-system {
+  .hero-img-powercable,
+  .hero-band-powercable {
     width: 100%;
     max-width: 520px;
   }
 
-  .hero-band-solar-system {
+  .hero-band-powercable {
     left: 0;
     transform: none;
   }
@@ -282,22 +282,22 @@ section[id] {
 
 /* --- RESPONSIVE polish --- */
 @media (max-width: 960px) {
-  .grid-hero-solar-system {
+  .grid-hero-powercable {
     grid-template-columns: 1fr;
   }
 
-  .hero-img-solar-system {
+  .hero-img-powercable {
     width: 100%;
     max-width: 520px;
   }
 }
 
 @media (max-width: 560px) {
-  .logos-track-solar-system {
+  .logos-track-powercable {
     gap: 24px;
   }
 
-  .trusted-heading-solar-system {
+  .trusted-heading-powercable {
     font-size: 18px;
   }
 }
@@ -309,16 +309,16 @@ section[id] {
 }
 
 /* Make sure the hero image can layer above the next section */
-.section-hero-solar-system {
+.section-hero-powercable {
   position: relative;
   z-index: 2;
 }
 
-.hero-right-solar-system {
+.hero-right-powercable {
   position: relative;
 }
 
-.hero-img-solar-system {
+.hero-img-powercable {
   position: relative;
   z-index: 3;
   /* sits above the Trusted section */
@@ -328,7 +328,7 @@ section[id] {
 }
 
 /* Remove the old base band if still present */
-.hero-band-solar-system {
+.hero-band-powercable {
   display: none !important;
 }
 
@@ -336,12 +336,12 @@ section[id] {
 @media (min-width: 961px) {
 
   /* Dip the image down */
-  .hero-img-solar-system {
+  .hero-img-powercable {
     transform: translateY(var(--overlap-solar));
   }
 
   /* Pull the Trusted section up so the image overlaps it */
-  .section-trusted-solar-system {
+  .section-trusted-powercable {
     position: relative;
     z-index: 1;
     margin-top: calc(var(--overlap-solar) * -1);
@@ -355,11 +355,11 @@ section[id] {
 
 /* ===== Mobile/Tablet: no overlap (clean stack) ===== */
 @media (max-width: 960px) {
-  .hero-img-solar-system {
+  .hero-img-powercable {
     transform: none;
   }
 
-  .section-trusted-solar-system {
+  .section-trusted-powercable {
     margin-top: clamp(28px, 6vw, 60px);
     /* your normal spacing */
     padding-top: clamp(56px, 8vw, 84px);
@@ -367,7 +367,7 @@ section[id] {
 }
 
 /* Stop marquee while user is paging via dots */
-.logos-track-solar-system.manual-solar-system {
+.logos-track-powercable.manual-powercable {
   animation: none !important;
 }
 
@@ -376,12 +376,12 @@ section[id] {
 /* why us */
 
 /* ====== WHY section: structure ====== */
-.section-why-solar-system-why {
+.section-why-powercable-why {
   background: var(--bg-solar);
   padding: clamp(56px, 8vw, 96px) 0;
 }
 
-.eyebrow-solar-system-why {
+.eyebrow-powercable-why {
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
@@ -389,7 +389,7 @@ section[id] {
   margin: 0 0 8px;
 }
 
-.title-solar-system-why {
+.title-powercable-why {
   text-align: center;
   color: var(--ink-solar);
   font-size: clamp(24px, 4vw, 40px);
@@ -399,7 +399,7 @@ section[id] {
 }
 
 /* Grid with subtle vertical dividers like your screenshot */
-.grid-solar-system-why {
+.grid-powercable-why {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px);
@@ -407,26 +407,26 @@ section[id] {
 }
 
 /* create column separators */
-.grid-solar-system-why>.card-solar-system-why {
+.grid-powercable-why>.card-powercable-why {
   position: relative;
   padding: clamp(16px, 3vw, 22px);
   background: transparent;
 }
 
-.grid-solar-system-why>.card-solar-system-why:nth-child(1),
-.grid-solar-system-why>.card-solar-system-why:nth-child(2),
-.grid-solar-system-why>.card-solar-system-why:nth-child(4),
-.grid-solar-system-why>.card-solar-system-why:nth-child(5) {
+.grid-powercable-why>.card-powercable-why:nth-child(1),
+.grid-powercable-why>.card-powercable-why:nth-child(2),
+.grid-powercable-why>.card-powercable-why:nth-child(4),
+.grid-powercable-why>.card-powercable-why:nth-child(5) {
   border-right: 1px solid rgba(21, 94, 117, .15);
   /* cyan-800 at low opacity */
 }
 
-.grid-solar-system-why>.card-solar-system-why:nth-child(n+4) {
+.grid-powercable-why>.card-powercable-why:nth-child(n+4) {
   border-top: 1px solid rgba(21, 94, 117, .15);
 }
 
 /* card content */
-.icon-wrap-solar-system-why {
+.icon-wrap-powercable-why {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -440,19 +440,19 @@ section[id] {
   flex-shrink: 0;
 }
 
-.icon-wrap-solar-system-why i {
+.icon-wrap-powercable-why i {
   font-size: 22px;
   line-height: 1;
 }
 
-.card-title-solar-system-why {
+.card-title-powercable-why {
   margin: 0 0 6px;
   font-weight: 800;
   color: var(--ink-solar);
   font-size: clamp(16px, 2vw, 18px);
 }
 
-.card-text-solar-system-why {
+.card-text-powercable-why {
   margin: 0;
   color: var(--muted-solar);
   font-size: clamp(14px, 1.9vw, 16px);
@@ -460,13 +460,13 @@ section[id] {
 }
 
 /* ====== Reveal Animations (slow) ======
-   Uses your existing JS: it toggles .in-view-solar-system.
-   Add direction classes ending with -solar-system-why.
+   Uses your existing JS: it toggles .in-view-powercable.
+   Add direction classes ending with -powercable-why.
 */
-.reveal-left-solar-system-why,
-.reveal-right-solar-system-why,
-.reveal-top-solar-system-why,
-.reveal-bottom-solar-system-why {
+.reveal-left-powercable-why,
+.reveal-right-powercable-why,
+.reveal-top-powercable-why,
+.reveal-bottom-powercable-why {
   opacity: 0;
   transform: translate3d(0, 0, 0);
   transition:
@@ -476,27 +476,27 @@ section[id] {
 }
 
 /* initial offsets */
-.reveal-left-solar-system-why {
+.reveal-left-powercable-why {
   transform: translateX(-28px);
 }
 
-.reveal-right-solar-system-why {
+.reveal-right-powercable-why {
   transform: translateX(28px);
 }
 
-.reveal-top-solar-system-why {
+.reveal-top-powercable-why {
   transform: translateY(-28px);
 }
 
-.reveal-bottom-solar-system-why {
+.reveal-bottom-powercable-why {
   transform: translateY(28px);
 }
 
-/* when JS adds .in-view-solar-system to the same element */
-.in-view-solar-system.reveal-left-solar-system-why,
-.in-view-solar-system.reveal-right-solar-system-why,
-.in-view-solar-system.reveal-top-solar-system-why,
-.in-view-solar-system.reveal-bottom-solar-system-why {
+/* when JS adds .in-view-powercable to the same element */
+.in-view-powercable.reveal-left-powercable-why,
+.in-view-powercable.reveal-right-powercable-why,
+.in-view-powercable.reveal-top-powercable-why,
+.in-view-powercable.reveal-bottom-powercable-why {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -504,10 +504,10 @@ section[id] {
 /* prefer-reduced-motion: show everything without animation */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-solar-system-why,
-  .reveal-right-solar-system-why,
-  .reveal-top-solar-system-why,
-  .reveal-bottom-solar-system-why {
+  .reveal-left-powercable-why,
+  .reveal-right-powercable-why,
+  .reveal-top-powercable-why,
+  .reveal-bottom-powercable-why {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -516,31 +516,31 @@ section[id] {
 
 /* ====== Responsive ====== */
 @media (max-width: 992px) {
-  .grid-solar-system-why {
+  .grid-powercable-why {
     grid-template-columns: repeat(2, 1fr);
   }
 
   /* tidy borders for 2-column layout */
-  .grid-solar-system-why>.card-solar-system-why {
+  .grid-powercable-why>.card-powercable-why {
     border-right: none;
     border-top: none;
   }
 
-  .grid-solar-system-why>.card-solar-system-why:nth-child(odd) {
+  .grid-powercable-why>.card-powercable-why:nth-child(odd) {
     border-right: 1px solid rgba(21, 94, 117, .15);
   }
 
-  .grid-solar-system-why>.card-solar-system-why:nth-child(n+3) {
+  .grid-powercable-why>.card-powercable-why:nth-child(n+3) {
     border-top: 1px solid rgba(21, 94, 117, .15);
   }
 }
 
 @media (max-width: 560px) {
-  .grid-solar-system-why {
+  .grid-powercable-why {
     grid-template-columns: 1fr;
   }
 
-  .grid-solar-system-why>.card-solar-system-why {
+  .grid-powercable-why>.card-powercable-why {
     border: none !important;
     padding: 14px 2px;
   }
@@ -571,32 +571,32 @@ body {
 }
 
 /* ===== Layout ===== */
-.section-about-lv-electrical-about- {
+.section-about-powercable-about- {
   background: #fff;
   padding: clamp(36px, 6vw, 80px) 0;
   padding-top: -40px;
 }
 
-.container-lv-electrical-about- {
+.container-powercable-about- {
   width: 100%;
   max-width: var(--container-w-lv);
   margin-inline: auto;
   padding-inline: clamp(16px, 3vw, 28px);
 }
 
-.grid-lv-electrical-about- {
+.grid-powercable-about- {
   display: grid;
-  grid-template-columns: 1.05fr 1fr .6fr;
+  grid-template-columns: .4fr .6fr;
   gap: clamp(16px, 3.8vw, 42px);
   align-items: center;
 }
 
 /* ===== Media ===== */
-.media-lv-electrical-about- {
+.media-powercable-about- {
   margin: 0;
 }
 
-.img-lv-electrical-about- {
+.img-powercable-about- {
   width: 100%;
   height: auto;
   display: block;
@@ -606,11 +606,11 @@ body {
 }
 
 /* ===== Copy ===== */
-.copy-lv-electrical-about- {
+.copy-powercable-about- {
   color: var(--ink-lv);
 }
 
-.eyebrow-lv-electrical-about- {
+.eyebrow-powercable-about- {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -620,24 +620,24 @@ body {
   margin-bottom: 6px;
 }
 
-.zap-lv-electrical-about- {
+.zap-powercable-about- {
   filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .05));
 }
 
-.title-lv-electrical-about- {
+.title-powercable-about- {
   margin: 0 0 8px;
   font-weight: 800;
   font-size: clamp(22px, 2.4vw, 30px);
   color: var(--ink-lv);
 }
 
-.lead-lv-electrical-about- {
+.lead-powercable-about- {
   margin: 0 0 12px;
   color: var(--muted-lv);
   font-size: clamp(14px, 1.5vw, 16px);
 }
 
-.benefits-lv-electrical-about- {
+.benefits-powercable-about- {
   list-style: none;
   padding: 0;
   margin: 0 0 16px;
@@ -645,7 +645,7 @@ body {
   gap: 8px;
 }
 
-.benefits-lv-electrical-about- li {
+.benefits-powercable-about- li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -653,7 +653,7 @@ body {
   font-weight: 600;
 }
 
-.dot-lv-electrical-about- {
+.dot-powercable-about- {
   width: 8px;
   height: 8px;
   border-radius: 999px;
@@ -662,7 +662,7 @@ body {
   box-shadow: 0 0 0 3px rgba(232, 91, 42, .15);
 }
 
-.btn-primary-lv-electrical-about- {
+.btn-primary-powercable-about- {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -675,14 +675,14 @@ body {
   transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
 
-.btn-primary-lv-electrical-about-:hover {
+.btn-primary-powercable-about-:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
   background: #274b87;
 }
 
 /* ===== Rating Card ===== */
-.rating-card-lv-electrical-about- {
+.rating-card-powercable-about- {
   background: var(--panel-lv);
   border-radius: 12px;
   padding: clamp(14px, 2.6vw, 20px);
@@ -690,13 +690,13 @@ body {
   box-shadow: var(--shadow-soft-lv);
 }
 
-.score-lv-electrical-about- {
+.score-powercable-about- {
   font-size: clamp(28px, 3.4vw, 40px);
   font-weight: 900;
   color: #274b87;
 }
 
-.stars-lv-electrical-about- {
+.stars-powercable-about- {
   display: inline-flex;
   gap: 2px;
   font-size: 18px;
@@ -704,17 +704,17 @@ body {
   margin: 6px 0 4px;
 }
 
-.stars-lv-electrical-about- span {
+.stars-powercable-about- span {
   color: #f59e0b;
 }
 
 /* gold */
-.half-lv-electrical-about- {
+.half-powercable-about- {
   color: #f59e0b;
   opacity: .5;
 }
 
-.rating-note-lv-electrical-about- {
+.rating-note-powercable-about- {
   margin: 0;
   color: #6b7a8c;
   font-size: 12px;
@@ -722,43 +722,43 @@ body {
 }
 
 /* ===== Reveal animation ===== */
-.reveal-lv-electrical-about- {
+.reveal-powercable-about- {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity .7s ease, transform .7s ease;
 }
 
-.reveal-in-lv-electrical-about- {
+.reveal-in-powercable-about- {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .grid-lv-electrical-about- {
+  .grid-powercable-about- {
     grid-template-columns: 1fr 1fr;
   }
 
-  .rating-card-lv-electrical-about- {
+  .rating-card-powercable-about- {
     order: 3;
   }
-    .section-about-lv-electrical-about-{
+    .section-about-powercable-about-{
     padding-top: -40px;
   }
 }
 
 @media (max-width: 680px) {
-  .grid-lv-electrical-about- {
+  .grid-powercable-about- {
     grid-template-columns: 1fr;
   }
-  .section-about-lv-electrical-about-{
+  .section-about-powercable-about-{
     padding-top: 40px;
   }
-  .section-about-lv-electrical-about-{
+  .section-about-powercable-about-{
     padding-top: 40px;
   }
 
-  .rating-card-lv-electrical-about- {
+  .rating-card-powercable-about- {
     max-width: 360px;
   }
 }
@@ -780,7 +780,7 @@ body {
 }
 
 /* =============== HERO / IMAGE STRIP =============== */
-.section-services-lv-electrical-services {
+.section-services-powercable-services {
   position: relative;
   color: var(--white-lv);
   /* room for heading row; bottom padding is small because the card will overlap */
@@ -795,7 +795,7 @@ body {
   min-height: clamp(280px, 45vh, 520px);
 }
 
-.section-services-lv-electrical-services::before {
+.section-services-powercable-services::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -805,7 +805,7 @@ body {
 }
 
 /* ===== Header Row ===== */
-.services-head-lv-electrical-services {
+.services-head-powercable-services {
   position: relative;
   z-index: 1;
   max-width: var(--container-w-lv);
@@ -817,7 +817,7 @@ body {
   gap: 16px;
 }
 
-.eyebrow-lv-electrical-services {
+.eyebrow-powercable-services {
   display: inline-block;
   color: #f0a38b;
   font-weight: 800;
@@ -826,14 +826,14 @@ body {
   margin-bottom: 6px;
 }
 
-.title-lv-electrical-services {
+.title-powercable-services {
   margin: 0;
   font-weight: 800;
   font-size: clamp(22px, 3vw, 34px);
   line-height: 1.2;
 }
 
-.btn-orange-lv-electrical-services {
+.btn-orange-powercable-services {
   align-self: start;
   background: var(--cta-orange-lv);
   color: #fff;
@@ -845,7 +845,7 @@ body {
   transition: transform .2s ease, filter .2s ease, background .2s ease;
 }
 
-.btn-orange-lv-electrical-services:hover {
+.btn-orange-powercable-services:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
   background: var(--brand-blue-lv);
@@ -853,7 +853,7 @@ body {
 
 /* =============== OVERLAP SECTION (WHITE CARD) =============== */
 /* This is your second <section>. It pulls upward by the overlap distance. */
-.section-services-lv-electrical-services2 {
+.section-services-powercable-services2 {
   position: relative;
   margin-top: calc(-1 * var(--services-overlap));
   /* keep stacking context tidy */
@@ -862,14 +862,14 @@ body {
 }
 
 /* Wrapper that centers the card and adds side padding */
-.services-card-lv-electrical-services {
+.services-card-powercable-services {
   max-width: var(--container-w-lv);
   margin: 0 auto;
   padding: 0 clamp(16px, 3vw, 28px);
 }
 
 /* The white card */
-.grid-lv-electrical-services {
+.grid-powercable-services {
   background: #fff;
   border: 1px solid var(--panel-border-lv);
   /* border-radius: 18px; */
@@ -880,19 +880,19 @@ body {
 }
 
 /* Thin dividers between columns on desktop */
-.grid-lv-electrical-services>.svc-item-lv-electrical-services:not(:last-child) {
+.grid-powercable-services>.svc-item-powercable-services:not(:last-child) {
   border-right: 1px solid var(--panel-border-lv);
 }
 
 /* =============== SERVICE ITEM =============== */
-.svc-item-lv-electrical-services {
+.svc-item-powercable-services {
   padding: clamp(18px, 3vw, 26px);
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   gap: 10px;
 }
 
-.svc-icon-lv-electrical-services {
+.svc-icon-powercable-services {
   width: 28px;
   height: 28px;
   display: grid;
@@ -900,38 +900,38 @@ body {
   color: #1f2937;
 }
 
-.svc-icon-lv-electrical-services i {
+.svc-icon-powercable-services i {
   font-size: 22px;
 }
 
-.svc-title-lv-electrical-services {
+.svc-title-powercable-services {
   margin: 0;
   font-size: clamp(16px, 1.8vw, 18px);
   font-weight: 800;
   color: var(--ink-lv);
 }
 
-.svc-title-lv-electrical-services a {
+.svc-title-powercable-services a {
   color: inherit;
   text-decoration: none;
 }
 
-.svc-title-lv-electrical-services a:hover {
+.svc-title-powercable-services a:hover {
   text-decoration: underline;
 }
 
-.svc-text-lv-electrical-services {
+.svc-text-powercable-services {
   margin: 0;
   color: var(--muted-lv);
   font-size: 14px;
 }
 
-/* .arrow-lv-electrical-services{ font-weight: 800; } */
+/* .arrow-powercable-services{ font-weight: 800; } */
 
 /* =============== SCROLL REVEAL (optional) =============== */
-.reveal-left-lv-electrical-services,
-.reveal-right-lv-electrical-services,
-.reveal-up-lv-electrical-services {
+.reveal-left-powercable-services,
+.reveal-right-powercable-services,
+.reveal-up-powercable-services {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -939,37 +939,37 @@ body {
   will-change: opacity, transform;
 }
 
-.reveal-left-lv-electrical-services {
+.reveal-left-powercable-services {
   transform: translateX(-28px);
 }
 
-.reveal-right-lv-electrical-services {
+.reveal-right-powercable-services {
   transform: translateX(28px);
 }
 
-.reveal-in-lv-electrical-services {
+.reveal-in-powercable-services {
   opacity: 1 !important;
   transform: translateX(0) translateY(0) !important;
 }
 
 /* =============== RESPONSIVE =============== */
 @media (max-width: 1024px) {
-  .services-head-lv-electrical-services {
+  .services-head-powercable-services {
     grid-template-columns: 1fr;
     row-gap: 12px;
   }
 
-  .btn-orange-lv-electrical-services {
+  .btn-orange-powercable-services {
     justify-self: start;
   }
 
-  .grid-lv-electrical-services {
+  .grid-powercable-services {
     grid-template-columns: 1fr;
     /* stack cards */
     /* border-radius: 14px; */
   }
 
-  .grid-lv-electrical-services>.svc-item-lv-electrical-services:not(:last-child) {
+  .grid-powercable-services>.svc-item-powercable-services:not(:last-child) {
     border-right: none;
     border-bottom: 1px solid var(--panel-border-lv);
   }
@@ -982,7 +982,7 @@ body {
     --services-overlap: clamp(20px, 7vw, 40px);
   }
 
-  .section-services-lv-electrical-services {
+  .section-services-powercable-services {
     padding-bottom: clamp(28px, 5vw, 40px);
     min-height: clamp(260px, 40vh, 420px);
     background-position: center;
@@ -993,9 +993,9 @@ body {
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-lv-electrical-services,
-  .reveal-right-lv-electrical-services,
-  .reveal-up-lv-electrical-services {
+  .reveal-left-powercable-services,
+  .reveal-right-powercable-services,
+  .reveal-up-powercable-services {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -1015,7 +1015,7 @@ body {
 }
 
 /* Details row spans full grid width and keeps your flat style */
-.svc-detail-lv-electrical-services {
+.svc-detail-powercable-services {
   grid-column: 1 / -1;
   display: none;
   background: #fff;
@@ -1038,14 +1038,14 @@ body {
 }
 
 /* Detail content layout */
-.svc-detail-lv-electrical-services h3 {
+.svc-detail-powercable-services h3 {
   margin: 0 0 6px 0;
   font-size: clamp(16px, 1.8vw, 20px);
   font-weight: 800;
   color: var(--ink-lv);
 }
 
-.svc-detail-lv-electrical-services p {
+.svc-detail-powercable-services p {
   margin: 0 0 10px 0;
   color: var(--muted-lv);
   font-size: 14px;
@@ -1062,9 +1062,9 @@ body {
 }
 
 /* Re-animate on scroll up/down (toggle reveal-in when entering/leaving) */
-.reveal-left-lv-electrical-services,
-.reveal-right-lv-electrical-services,
-.reveal-up-lv-electrical-services {
+.reveal-left-powercable-services,
+.reveal-right-powercable-services,
+.reveal-up-powercable-services {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -1072,21 +1072,21 @@ body {
   will-change: opacity, transform;
 }
 
-.reveal-left-lv-electrical-services {
+.reveal-left-powercable-services {
   transform: translateX(-28px);
 }
 
-.reveal-right-lv-electrical-services {
+.reveal-right-powercable-services {
   transform: translateX(28px);
 }
 
-.reveal-in-lv-electrical-services {
+.reveal-in-powercable-services {
   opacity: 1 !important;
   transform: translateX(0) translateY(0) !important;
 }
 
 /* Floating Explore/View Less button */
-.btn-fab-lv-electrical-services {
+.btn-fab-powercable-services {
   position: fixed;
   right: clamp(2px, 1vw, 2px);
   bottom: clamp(2px, 1vw, 2px);
@@ -1105,7 +1105,7 @@ body {
   transition: transform .2s ease, filter .2s ease, background .2s ease;
 }
 
-.btn-fab-lv-electrical-services:hover {
+.btn-fab-powercable-services:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
   background: var(--brand-blue-lv);
@@ -1113,13 +1113,13 @@ body {
 
 /* If users prefer reduced motion, keep it steady */
 @media (prefers-reduced-motion: reduce) {
-  .btn-fab-lv-electrical-services {
+  .btn-fab-powercable-services {
     transition: none;
   }
 }
 
 /* makes the header (with the button) stick to the top */
-.services-head-lv-electrical-services {
+.services-head-powercable-services {
   position: sticky;
   top: 0;
   z-index: 5;
@@ -1139,14 +1139,14 @@ body {
 }
 
 /* ===== section wrapper ===== */
-.section-process-lv-electrical-process {
+.section-process-powercable-process {
   background: #fff;
   padding: clamp(16px, 1vw, 30px) 0;
   /* max-width: 1100px; */
 }
 
 
-.grid-lv-electrical-process {
+.grid-powercable-process {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   gap: clamp(18px, 4vw, 44px);
@@ -1154,11 +1154,11 @@ body {
 }
 
 /* ===== left column ===== */
-.media-lv-electrical-process {
+.media-powercable-process {
   margin: 0 0 clamp(12px, 2vw, 16px);
 }
 
-.img-lv-electrical-process {
+.img-powercable-process {
   width: 100%;
   height: auto;
   display: block;
@@ -1167,7 +1167,7 @@ body {
   box-shadow: var(--shadow-soft-lv);
 }
 
-.eyebrow-lv-electrical-process {
+.eyebrow-powercable-process {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1177,36 +1177,36 @@ body {
   margin: 6px 0;
 }
 
-.bolt-icon-lv-electrical-process {
+.bolt-icon-powercable-process {
   width: 16px;
   height: 16px;
   object-fit: contain;
   display: inline-block;
 }
 
-.title-lv-electrical-process {
+.title-powercable-process {
   margin: 4px 0 8px;
   font-weight: 800;
   font-size: clamp(22px, 2.6vw, 30px);
   color: var(--ink-lv);
 }
 
-.lead-lv-electrical-process {
+.lead-powercable-process {
   margin: 0 0 14px;
   color: var(--muted-lv);
   font-size: clamp(14px, 1.6vw, 16px);
   max-width: 56ch;
 }
 
-/* NOTE: the button uses .btn-orange-lv-electrical-services from your existing CSS */
+/* NOTE: the button uses .btn-orange-powercable-services from your existing CSS */
 
 /* ===== right column: vertical timeline ===== */
-.timeline-lv-electrical-process {
+.timeline-powercable-process {
   position: relative;
   background: #fff;
 }
 
-.timeline-list-lv-electrical-process {
+.timeline-list-powercable-process {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1214,7 +1214,7 @@ body {
 }
 
 /* Vertical line */
-.timeline-list-lv-electrical-process::before {
+.timeline-list-powercable-process::before {
   content: "";
   position: absolute;
   left: 20px;
@@ -1227,7 +1227,7 @@ body {
 }
 
 /* Step row */
-.timeline-item-lv-electrical-process {
+.timeline-item-powercable-process {
   position: relative;
   display: grid;
   grid-template-columns: 48px 1fr;
@@ -1237,7 +1237,7 @@ body {
 }
 
 /* Icon bubble */
-.step-icon-lv-electrical-process {
+.step-icon-powercable-process {
   width: 60px;
   height: 60px;
   border-radius: 999px;
@@ -1250,7 +1250,7 @@ body {
   z-index: 1;
 }
 
-.step-icon-lv-electrical-process img {
+.step-icon-powercable-process img {
   width: 25px;
   height: 25px;
   object-fit: contain;
@@ -1260,23 +1260,23 @@ body {
 }
 
 /* Content */
-.step-content-lv-electrical-process {
+.step-content-powercable-process {
   padding-bottom: 10px;
   border-bottom: 1px dashed #d5deea;
 }
 
-.timeline-item-lv-electrical-process:last-child .step-content-lv-electrical-process {
+.timeline-item-powercable-process:last-child .step-content-powercable-process {
   border-bottom: 0;
 }
 
-.step-title-lv-electrical-process {
+.step-title-powercable-process {
   margin: 2px 0 4px;
   font-weight: 800;
   color: var(--ink-lv);
   font-size: clamp(16px, 1.8vw, 18px);
 }
 
-.step-text-lv-electrical-process {
+.step-text-powercable-process {
   margin: 0;
   color: var(--muted-lv);
   font-size: 14px;
@@ -1284,8 +1284,8 @@ body {
 }
 
 /* ===== reveal on scroll ===== */
-.reveal-left-lv-electrical-process,
-.reveal-right-lv-electrical-process {
+.reveal-left-powercable-process,
+.reveal-right-powercable-process {
   opacity: 0;
   transform: translateX(-24px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -1293,28 +1293,28 @@ body {
   will-change: opacity, transform;
 }
 
-.reveal-right-lv-electrical-process {
+.reveal-right-powercable-process {
   transform: translateX(24px);
 }
 
-.reveal-in-lv-electrical-process {
+.reveal-in-powercable-process {
   opacity: 1 !important;
   transform: none !important;
 }
 
 /* ===== responsive ===== */
 @media (max-width: 1024px) {
-  .grid-lv-electrical-process {
+  .grid-powercable-process {
     grid-template-columns: 1fr;
   }
 
-  .timeline-list-lv-electrical-process::before {
+  .timeline-list-powercable-process::before {
     left: 20px;
   }
 }
 
 @media (max-width: 560px) {
-  .timeline-item-lv-electrical-process {
+  .timeline-item-powercable-process {
     grid-template-columns: 44px 1fr;
   }
 }
@@ -1322,8 +1322,8 @@ body {
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-lv-electrical-process,
-  .reveal-right-lv-electrical-process {
+  .reveal-left-powercable-process,
+  .reveal-right-powercable-process {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -1331,12 +1331,12 @@ body {
 }
 
 /* ====== FULL-BLEED LAYOUT & NO GAP ====== */
-.section-why-le-electrical-why-us {
+.section-why-powercable-why-us {
   background: #fff;
   padding: clamp(36px, 1vw, 84px) 0;
 }
 
-.container-le-electrical-why-us {
+.container-powercable-why-us {
   width: 100%;
   max-width: none;
   /* full width */
@@ -1347,7 +1347,7 @@ body {
 }
 
 /* Two-column split: no gutter */
-.grid-le-electrical-why-us {
+.grid-powercable-why-us {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1360,7 +1360,7 @@ body {
 }
 
 /* LEFT dark panel: no outer radius */
-.left-le-electrical-why-us {
+.left-powercable-why-us {
   background: #0e141c;
   color: #eef3fb;
   border-radius: 0;
@@ -1372,11 +1372,11 @@ body {
 
 
 /* RIGHT image: flush, no radius */
-.media-le-electrical-why-us {
+.media-powercable-why-us {
   margin: 0;
 }
 
-.img-le-electrical-why-us {
+.img-powercable-why-us {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1388,7 +1388,7 @@ body {
 }
 
 /* ====== CONTENT (unchanged visuals) ====== */
-.eyebrow-le-electrical-why-us {
+.eyebrow-powercable-why-us {
   display: inline-flex;
   gap: 8px;
   align-items: center;
@@ -1399,20 +1399,20 @@ body {
   margin-bottom: 6px;
 }
 
-.title-le-electrical-why-us {
+.title-powercable-why-us {
   margin: 4px 0 12px;
   font-size: clamp(22px, 3vw, 34px);
   font-weight: 800;
   line-height: 1.2;
 }
 
-.cards-le-electrical-why-us {
+.cards-powercable-why-us {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
 
-.card-le-electrical-why-us {
+.card-powercable-why-us {
   border: 1px solid rgba(255, 255, 255, .14);
   border-radius: 12px;
   padding: 16px;
@@ -1420,41 +1420,41 @@ body {
   transition: transform .2s, box-shadow .2s, border-color .2s;
 }
 
-.card-le-electrical-why-us:hover {
+.card-powercable-why-us:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
   border-color: rgba(255, 255, 255, .28);
 }
 
-.card-title-le-electrical-why-us {
+.card-title-powercable-why-us {
   margin: 0 0 6px;
   font-weight: 800;
 }
 
-.card-text-le-electrical-why-us {
+.card-text-powercable-why-us {
   margin: 0;
   color: #9fb0c6;
   line-height: 1.65;
 }
 
-.footnote-le-electrical-why-us {
+.footnote-powercable-why-us {
   margin: 12px 0 0;
   color: #9fb0c6;
 }
 
-.footnote-le-electrical-why-us a {
+.footnote-powercable-why-us a {
   color: #e85b2a;
   font-weight: 800;
   text-decoration: none;
 }
 
-.footnote-le-electrical-why-us a:hover {
+.footnote-powercable-why-us a:hover {
   text-decoration: underline;
 }
 
 /* ====== MIDDLE CIRCLE: ARROW ONLY ====== */
 /* keep link element as-is; we’ll hide its inner text visually and render an arrow */
-.floating-cta-le-electrical-why-us {
+.floating-cta-powercable-why-us {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1468,16 +1468,16 @@ body {
   place-items: center;
   text-decoration: none;
   box-shadow: 0 12px 28px rgba(232, 91, 42, .35);
-  animation: spin-le-electrical-why-us 7.5s linear infinite;
+  animation: spin-powercable-why-us 7.5s linear infinite;
 }
 
-.floating-cta-le-electrical-why-us:hover {
+.floating-cta-powercable-why-us:hover {
   filter: brightness(1.05);
   transform: translate(-50%, -50%) scale(1.03);
 }
 
 /* Hide any inner text (e.g., 'Contact Us') accessibly */
-.floating-cta-le-electrical-why-us>* {
+.floating-cta-powercable-why-us>* {
   position: absolute !important;
   width: 1px;
   height: 1px;
@@ -1487,7 +1487,7 @@ body {
 }
 
 /* Render arrow */
-.floating-cta-le-electrical-why-us::after {
+.floating-cta-powercable-why-us::after {
   content: "➜";
   font-weight: 900;
   font-size: 22px;
@@ -1495,7 +1495,7 @@ body {
 }
 
 /* keep gentle spin */
-@keyframes spin-le-electrical-why-us {
+@keyframes spin-powercable-why-us {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -1506,44 +1506,44 @@ body {
 }
 
 /* ====== REVEALS (unchanged) ====== */
-.reveal-left-le-electrical-why-us,
-.reveal-right-le-electrical-why-us,
-.reveal-top-le-electrical-why-us,
-.reveal-bottom-le-electrical-why-us {
+.reveal-left-powercable-why-us,
+.reveal-right-powercable-why-us,
+.reveal-top-powercable-why-us,
+.reveal-bottom-powercable-why-us {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity .8s cubic-bezier(.2, .65, .2, 1),
     transform .8s cubic-bezier(.2, .65, .2, 1);
 }
 
-.reveal-left-le-electrical-why-us {
+.reveal-left-powercable-why-us {
   transform: translateX(-28px);
 }
 
-.reveal-right-le-electrical-why-us {
+.reveal-right-powercable-why-us {
   transform: translateX(28px);
 }
 
-.reveal-top-le-electrical-why-us {
+.reveal-top-powercable-why-us {
   transform: translateY(-28px);
 }
 
-.reveal-bottom-le-electrical-why-us {
+.reveal-bottom-powercable-why-us {
   transform: translateY(28px);
 }
 
-.reveal-in-le-electrical-why-us {
+.reveal-in-powercable-why-us {
   opacity: 1 !important;
   transform: none !important;
 }
 
 /* ====== RESPONSIVE ====== */
 @media (max-width:1024px) {
-  .grid-le-electrical-why-us {
+  .grid-powercable-why-us {
     grid-template-columns: 1fr;
   }
 
-  .floating-cta-le-electrical-why-us {
+  .floating-cta-powercable-why-us {
     position: static;
     margin: 12px auto 0;
     transform: none;
@@ -1552,13 +1552,13 @@ body {
     height: 64px;
   }
 
-  .img-le-electrical-why-us {
+  .img-powercable-why-us {
     height: 320px;
   }
 }
 
 @media (max-width:640px) {
-  .cards-le-electrical-why-us {
+  .cards-powercable-why-us {
     grid-template-columns: 1fr;
   }
 }
@@ -1566,22 +1566,22 @@ body {
 /* Reduced motion */
 @media (prefers-reduced-motion:reduce) {
 
-  .reveal-left-le-electrical-why-us,
-  .reveal-right-le-electrical-why-us,
-  .reveal-top-le-electrical-why-us,
-  .reveal-bottom-le-electrical-why-us {
+  .reveal-left-powercable-why-us,
+  .reveal-right-powercable-why-us,
+  .reveal-top-powercable-why-us,
+  .reveal-bottom-powercable-why-us {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
 
-  .floating-cta-le-electrical-why-us {
+  .floating-cta-powercable-why-us {
     animation: none !important;
   }
 }
 
 /* ===== Details layout with optional image ===== */
-.svc-detail-lv-electrical-services {
+.svc-detail-powercable-services {
   grid-column: 1 / -1;
   display: none;
   background: #fff;
@@ -1602,7 +1602,7 @@ body {
   }
 }
 
-.svc-detail-lv-electrical-services {
+.svc-detail-powercable-services {
   grid-column: 1 / -1;
   display: none;
   background: #fff;
@@ -1681,7 +1681,7 @@ body {
 }
 
 /* Compact CTA button */
-.svc-cta-lv-electrical-services {
+.svc-cta-powercable-services {
   position: relative;
   align-self: end;
   justify-self: start;
@@ -1703,7 +1703,7 @@ body {
 }
 
 /* default arrow */
-.arrow-lv-electrical-services {
+.arrow-powercable-services {
   font-weight: 800;
   font-size: 18px;
   line-height: 1;
@@ -1711,7 +1711,7 @@ body {
 }
 
 /* hidden label that slides in on hover */
-.svc-cta-lv-electrical-services::after {
+.svc-cta-powercable-services::after {
   /* content: "Learn More"; */
   white-space: nowrap;
   /* keep on one line */
@@ -1723,37 +1723,37 @@ body {
 }
 
 /* hover: turn blue and show label */
-.svc-cta-lv-electrical-services:hover {
+.svc-cta-powercable-services:hover {
   background: var(--brand-blue-lv);
   color: #fff;
   border-color: var(--brand-blue-lv);
 }
 
-.svc-cta-lv-electrical-services:hover .arrow-lv-electrical-services {
+.svc-cta-powercable-services:hover .arrow-powercable-services {
   transform: translateX(4px);
 }
 
-.svc-cta-lv-electrical-services:hover::after {
+.svc-cta-powercable-services:hover::after {
   opacity: 1;
   transform: translateX(0);
 }
 
 /* keyboard focus */
-.svc-cta-lv-electrical-services:focus-visible {
+.svc-cta-powercable-services:focus-visible {
   outline: 3px solid #ffb26b;
   outline-offset: 2px;
 }
 
 /* optional: make it full-width on very small screens */
 @media (max-width: 560px) {
-  .svc-cta-lv-electrical-services {
+  .svc-cta-powercable-services {
     width: 100%;
     justify-content: center;
   }
 }
 
 /* --- MODAL (gated docs) --- */
-.modal-csc-solar-system-csc-products {
+.modal-csc-powercable-csc-products {
   position: fixed;
   /* cover the whole viewport */
   inset: 0;
@@ -1763,11 +1763,11 @@ body {
   /* sit above everything */
 }
 
-.modal-csc-solar-system-csc-products[aria-hidden="false"] {
+.modal-csc-powercable-csc-products[aria-hidden="false"] {
   display: block;
 }
 
-.modal-backdrop-csc-solar-system-csc-products {
+.modal-backdrop-csc-powercable-csc-products {
   position: absolute;
   inset: 0;
   /* dim + blur the entire page behind the modal */
@@ -1778,7 +1778,7 @@ body {
   z-index: 0;
 }
 
-.modal-dialog-csc-solar-system-csc-products {
+.modal-dialog-csc-powercable-csc-products {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1792,7 +1792,7 @@ body {
   /* above backdrop */
 }
 
-.modal-close-csc-solar-system-csc-products {
+.modal-close-csc-powercable-csc-products {
   position: absolute;
   top: 10px;
   right: 12px;
@@ -1840,20 +1840,20 @@ body.modal-open {
 }
 
 /* ====== Section wrapper ====== */
-.section-lv-electrical-get-in-touch {
+.section-powercable-get-in-touch {
   background: var(--bg-dark-lv);
   /* full-width behind stats */
   padding: 0 0 clamp(18px, 1vw, 10px);
 }
 
 /* consistent container */
-.container-lv-electrical-get-in-touch {
+.container-powercable-get-in-touch {
   width: min(82vw, 800px);
   margin-inline: auto;
 }
 
 /* ====== Stats strip ====== */
-.stats-wrap-lv-electrical-get-in-touch {
+.stats-wrap-powercable-get-in-touch {
   background: #0b1220;
   padding-top: var(--stats-pad-top);
   /* add overlap space so card can rise into the band cleanly */
@@ -1862,41 +1862,41 @@ body.modal-open {
   z-index: 1;
 }
 
-.stats-grid-lv-electrical-get-in-touch {
+.stats-grid-powercable-get-in-touch {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(12px, 2.8vw, 34px);
   align-items: center;
 }
 
-.stat-lv-electrical-get-in-touch {
+.stat-powercable-get-in-touch {
   color: #e8edf7;
   padding: clamp(8px, 1.4vw, 12px) 0;
   border-right: 1px solid rgba(255, 255, 255, .12);
 }
 
-.stat-lv-electrical-get-in-touch:last-child {
+.stat-powercable-get-in-touch:last-child {
   border-right: 0;
 }
 
-.stat-num-lv-electrical-get-in-touch {
+.stat-num-powercable-get-in-touch {
   font-weight: 900;
   font-size: clamp(28px, 4.6vw, 54px);
   line-height: 1;
 }
 
-.stat-num-lv-electrical-get-in-touch::after {
+.stat-num-powercable-get-in-touch::after {
   content: attr(data-suffix);
 }
 
-.stat-label-lv-electrical-get-in-touch {
+.stat-label-powercable-get-in-touch {
   color: rgba(255, 255, 255, .8);
   font-size: clamp(12px, 1.6vw, 14px);
   margin-top: 6px;
 }
 
 /* ====== Overlapping card (inside the next container) ====== */
-.card-lv-electrical-get-in-touch {
+.card-powercable-get-in-touch {
   position: relative;
   z-index: 2;
   /* above the stats band */
@@ -1912,21 +1912,21 @@ body.modal-open {
 }
 
 /* Media side */
-.media-lv-electrical-get-in-touch {
+.media-powercable-get-in-touch {
   position: relative;
   margin: 0;
   background: #0d1726;
   min-height: 260px;
 }
 
-.media-lv-electrical-get-in-touch img {
+.media-powercable-get-in-touch img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.phone-badge-lv-electrical-get-in-touch {
+.phone-badge-powercable-get-in-touch {
   position: absolute;
   left: clamp(12px, 2vw, 18px);
   bottom: clamp(12px, 2vw, 18px);
@@ -1940,7 +1940,7 @@ body.modal-open {
   border-radius: 12px;
 }
 
-.badge-icon-lv-electrical-get-in-touch {
+.badge-icon-powercable-get-in-touch {
   display: grid;
   place-items: center;
   width: 34px;
@@ -1950,24 +1950,24 @@ body.modal-open {
   font-size: 18px;
 }
 
-.badge-text-lv-electrical-get-in-touch {
+.badge-text-powercable-get-in-touch {
   font-size: 13px;
   line-height: 1.25;
 }
 
 /* Content side */
-.content-lv-electrical-get-in-touch {
+.content-powercable-get-in-touch {
   padding: clamp(18px, 4vw, 36px);
 }
 
-.eyebrow-lv-electrical-get-in-touch {
+.eyebrow-powercable-get-in-touch {
   color: var(--brand-blue-lv);
   font-weight: 800;
   font-size: 13px;
   text-decoration: none;
 }
 
-.title-lv-electrical-get-in-touch {
+.title-powercable-get-in-touch {
   margin: 6px 0 8px;
   color: var(--ink-lv);
   font-weight: 900;
@@ -1975,14 +1975,14 @@ body.modal-open {
   font-size: clamp(22px, 3.6vw, 34px);
 }
 
-.sub-lv-electrical-get-in-touch {
+.sub-powercable-get-in-touch {
   color: var(--muted-lv);
   margin: 0 0 16px;
   font-size: clamp(14px, 1.8vw, 16px);
   line-height: 1.7;
 }
 
-.btn-primary-lv-electrical-get-in-touch {
+.btn-primary-powercable-get-in-touch {
   display: inline-block;
   background: var(--cta-orange-lv);
   color: #fff;
@@ -1993,13 +1993,13 @@ body.modal-open {
   transition: transform .18s ease, filter .18s ease;
 }
 
-.btn-primary-lv-electrical-get-in-touch:hover {
+.btn-primary-powercable-get-in-touch:hover {
   transform: translateY(-2px);
   filter: brightness(1.03);
 }
 
 /* ====== Reveal variants (same as before) ====== */
-.reveal-lv-electrical-get-in-touch {
+.reveal-powercable-get-in-touch {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -2008,21 +2008,21 @@ body.modal-open {
   transition-delay: var(--rv-delay, 0ms);
 }
 
-.reveal-left-lv-electrical-get-in-touch {
+.reveal-left-powercable-get-in-touch {
   transform: translateX(-28px);
 }
 
-.reveal-right-lv-electrical-get-in-touch {
+.reveal-right-powercable-get-in-touch {
   transform: translateX(28px);
 }
 
-.reveal-lv-electrical-get-in-touch.in-view {
+.reveal-powercable-get-in-touch.in-view {
   opacity: 1;
   transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal-lv-electrical-get-in-touch {
+  .reveal-powercable-get-in-touch {
     transition: none !important;
     transform: none !important;
     opacity: 1 !important;
@@ -2031,30 +2031,30 @@ body.modal-open {
 
 /* ====== Responsive grid ====== */
 @media (max-width: 1024px) {
-  .stats-grid-lv-electrical-get-in-touch {
+  .stats-grid-powercable-get-in-touch {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .stat-lv-electrical-get-in-touch:nth-child(2) {
+  .stat-powercable-get-in-touch:nth-child(2) {
     border-right: 0;
   }
 
-  .card-lv-electrical-get-in-touch {
+  .card-powercable-get-in-touch {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 560px) {
-  .stats-grid-lv-electrical-get-in-touch {
+  .stats-grid-powercable-get-in-touch {
     grid-template-columns: 1fr;
   }
 
-  .stat-lv-electrical-get-in-touch {
+  .stat-powercable-get-in-touch {
     border-right: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .12);
   }
 
-  .stat-lv-electrical-get-in-touch:last-child {
+  .stat-powercable-get-in-touch:last-child {
     border-bottom: 0;
   }
 }
@@ -2066,7 +2066,7 @@ body.modal-open {
 }
 
 /* Use a background gradient so the area below the stats is white */
-.section-lv-electrical-get-in-touch {
+.section-powercable-get-in-touch {
   background: linear-gradient(to bottom,
       #0b1220 0,
       #0b1220 var(--band-fill-lv),
@@ -2078,21 +2078,21 @@ body.modal-open {
 }
 
 /* Keep the stats band padding as you like, but add overlap space cleanly */
-.stats-wrap-lv-electrical-get-in-touch {
+.stats-wrap-powercable-get-in-touch {
   padding-top: var(--stats-pad-top);
   padding-bottom: calc(var(--stats-pad-btm) + var(--overlap-lv));
 }
 
 /* Stronger/cleaner separator like screenshot 2 */
-.stats-grid-lv-electrical-get-in-touch {
+.stats-grid-powercable-get-in-touch {
   align-items: center;
 }
 
-.stat-lv-electrical-get-in-touch {
+.stat-powercable-get-in-touch {
   border-right: 1px solid rgba(255, 255, 255, .18);
 }
 
-.stat-lv-electrical-get-in-touch:last-child {
+.stat-powercable-get-in-touch:last-child {
   border-right: 0;
 }
 
@@ -2103,57 +2103,57 @@ body.modal-open {
 }
 
 /* Smaller radius and a bit stronger shadow like the reference */
-.card-lv-electrical-get-in-touch {
+.card-powercable-get-in-touch {
   transform: translateY(calc(-1 * var(--overlap-lv)));
   border-radius: 10px;
   box-shadow: 0 14px 36px rgba(0, 0, 0, .14);
 }
 
 /* Reduce right column padding so the white box doesn’t look too roomy */
-.content-lv-electrical-get-in-touch {
+.content-powercable-get-in-touch {
   padding: clamp(16px, 3.3vw, 28px);
 }
 
-.title-lv-electrical-get-in-touch {
+.title-powercable-get-in-touch {
   margin: 4px 0 10px;
 }
 
-.sub-lv-electrical-get-in-touch {
+.sub-powercable-get-in-touch {
   margin-bottom: 14px;
 }
 
 /* Make the image a touch taller so the left/right look balanced */
-.media-lv-electrical-get-in-touch {
+.media-powercable-get-in-touch {
   min-height: clamp(260px, 34vw, 360px);
 }
 
 /* ===== Phone badge: make it tighter (less tall) ===== */
-.phone-badge-lv-electrical-get-in-touch {
+.phone-badge-powercable-get-in-touch {
   padding: 8px 12px;
   /* was 12px 18px */
   gap: 8px;
   border-radius: 10px;
 }
 
-.badge-icon-lv-electrical-get-in-touch {
+.badge-icon-powercable-get-in-touch {
   width: 28px;
   height: 28px;
   /* was 34px */
   font-size: 16px;
 }
 
-.badge-text-lv-electrical-get-in-touch {
+.badge-text-powercable-get-in-touch {
   font-size: 12px;
   /* was 13px */
   line-height: 1.2;
 }
 
-.badge-text-lv-electrical-get-in-touch strong {
+.badge-text-powercable-get-in-touch strong {
   font-size: 13px;
 }
 
 /* Button a bit smaller like the mock */
-.btn-primary-lv-electrical-get-in-touch {
+.btn-primary-powercable-get-in-touch {
   padding: 10px 14px;
   border-radius: 6px;
 }
@@ -2164,7 +2164,7 @@ body.modal-open {
     --overlap-lv: 64px;
   }
 
-  .media-lv-electrical-get-in-touch {
+  .media-powercable-get-in-touch {
     min-height: 300px;
   }
 }
@@ -2174,11 +2174,11 @@ body.modal-open {
     --overlap-lv: 0px;
   }
 
-  .media-lv-electrical-get-in-touch {
+  .media-powercable-get-in-touch {
     min-height: 220px;
   }
 
-  .phone-badge-lv-electrical-get-in-touch {
+  .phone-badge-powercable-get-in-touch {
     left: 10px;
     bottom: 10px;
     padding: 7px 10px;
@@ -2270,7 +2270,7 @@ body.modal-open {
 }
 
 /* Remove top/bottom padding completely */
-.section-process-lv-electrical-process {
+.section-process-powercable-process {
   background: #fff;
   /* remove extra top/bottom margin */
 }
@@ -2278,7 +2278,7 @@ body.modal-open {
 /* Ensure container sits flush with section edges */
 
 /* Tighten grid spacing */
-.grid-lv-electrical-process {
+.grid-powercable-process {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   gap: 20px;
@@ -2317,22 +2317,22 @@ section+section {
 }
 
 /* ---------- Section ---------- */
-.lv-electric-panel-project {
+.powercable-project {
   background: var(--lv-bg);
   color: var(--lv-ink);
   padding: clamp(40px, 6vw, 88px) 16px;
 }
 
-.lv-epp-container {
+.powercable-container {
   max-width: 1180px;
   margin: 0 auto;
 }
 
-.lv-epp-header {
+.powercable-header {
   margin-bottom: 26px;
 }
 
-.lv-epp-kicker {
+.powercable-kicker {
   display: inline-block;
   font: 600 12px/1.1 system-ui, Segoe UI, Roboto, Arial, sans-serif;
   letter-spacing: .12em;
@@ -2343,13 +2343,13 @@ section+section {
   border-radius: 999px;
 }
 
-.lv-epp-header h2 {
+.powercable-header h2 {
   margin: 12px 0 0;
   font: 700 clamp(22px, 3.5vw, 34px)/1.25 system-ui, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 /* ---------- Grid ---------- */
-.lv-epp-grid {
+.powercable-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
@@ -2357,19 +2357,19 @@ section+section {
 }
 
 @media (max-width:1024px) {
-  .lv-epp-grid {
+  .powercable-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width:640px) {
-  .lv-epp-grid {
+  .powercable-grid {
     grid-template-columns: 1fr;
   }
 }
 
 /* ---------- Card ---------- */
-.lv-epp-card {
+.powercable-card {
   background: var(--lv-card-bg);
   border: 1px solid var(--lv-border);
   border-radius: var(--lv-radius);
@@ -2379,19 +2379,19 @@ section+section {
   opacity: 1;
 }
 
-.lv-epp-card:hover {
+.powercable-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--lv-shadow);
   border-color: #ffd7aa;
 }
 
-.lv-epp-media {
+.powercable-media {
   position: relative;
   aspect-ratio: 16/9;
   overflow: hidden;
 }
 
-.lv-epp-media img {
+.powercable-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2400,11 +2400,11 @@ section+section {
   transition: transform .5s ease;
 }
 
-.lv-epp-card:hover .lv-epp-media img {
+.powercable-card:hover .powercable-media img {
   transform: scale(1.06);
 }
 
-.lv-epp-year {
+.powercable-year {
   position: absolute;
   inset: 14px auto auto 14px;
   background: linear-gradient(135deg, var(--lv-orange), var(--lv-orange-400));
@@ -2416,45 +2416,45 @@ section+section {
   box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
 }
 
-.lv-epp-body {
+.powercable-body {
   padding: 18px 18px 20px;
   color: var(--lv-ink);
 }
 
-.lv-epp-body h3 {
+.powercable-body h3 {
   margin: 2px 0 8px;
   font: 700 18px/1.35 system-ui, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.lv-epp-client {
+.powercable-client {
   color: var(--lv-muted);
   margin: 0 0 10px;
   font-size: 14px;
 }
 
-.lv-epp-points {
+.powercable-points {
   margin: 0;
   padding: 0 0 0 18px;
   color: #253048;
 }
 
-.lv-epp-points li {
+.powercable-points li {
   margin: 6px 0;
 }
-.lv-epp-points {
+.powercable-points {
   margin: 0;
   padding: 0;
   list-style: none; /* remove default bullets */
   color: #253048;
 }
 
-.lv-epp-points li {
+.powercable-points li {
   position: relative;
   margin: 6px 0;
   padding-left: 22px; /* space for bullet */
 }
 
-.lv-epp-points li::before {
+.powercable-points li::before {
   content: "•";               /* bullet symbol */
   position: absolute;
   left: 0;
@@ -2466,7 +2466,7 @@ section+section {
 
 
 /* ---------- More button ---------- */
-.lv-epp-more-wrap {
+.powercable-more-wrap {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
@@ -2474,7 +2474,7 @@ section+section {
   padding: 8px 0 6px;
 }
 
-.lv-epp-more {
+.powercable-more {
   border: 0;
   cursor: pointer;
   color: #3a2002;
@@ -2486,13 +2486,13 @@ section+section {
   transition: transform .25s ease, box-shadow .25s ease, filter .2s ease;
 }
 
-.lv-epp-more:hover {
+.powercable-more:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(234, 88, 12, .30);
   background: linear-gradient(135deg, #fdba74, #fb923c);
 }
 
-.lv-epp-more:active {
+.powercable-more:active {
   transform: translateY(0);
 }
 
@@ -2531,7 +2531,7 @@ section+section {
    ======================================================================= */
 
 /* Default portrait: 3:4 */
-.lv-electric-panel-project .lv-epp-media {
+.powercable-project .powercable-media {
   aspect-ratio: 10/11;
   /* vertical rectangle */
   max-height: 360px;
@@ -2539,7 +2539,7 @@ section+section {
   overflow: hidden;
 }
 
-.lv-electric-panel-project .lv-epp-media img {
+.powercable-project .powercable-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2553,18 +2553,18 @@ section+section {
 
 /* Slightly taller cap on very wide screens */
 @media (min-width: 1200px) {
-  .lv-electric-panel-project .lv-epp-media {
+  .powercable-project .powercable-media {
     max-height: 640px;
   }
 }
 
 /* Optional: add class "is-23" on a card to use a 2:3 portrait */
-.lv-electric-panel-project .lv-epp-card.is-23 .lv-epp-media {
+.powercable-project .powercable-card.is-23 .powercable-media {
   aspect-ratio: 2 / 3;
 }
 
 /* Keep the year pill positioned nicely on taller images */
-.lv-electric-panel-project .lv-epp-year {
+.powercable-project .powercable-year {
   inset: 12px auto auto 12px;
 }
 
@@ -2646,22 +2646,22 @@ section+section {
 @media (max-width: 640px) {
 
   /* Project cards section */
-  .lv-electric-panel-project {
+  .powercable-project {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .lv-epp-container {
+  .powercable-container {
     max-width: none;
     margin: 0;
     padding: 0 12px;       /* small, even side padding */
   }
 
-  .lv-epp-grid {
+  .powercable-grid {
     grid-template-columns: 1fr;  /* single full-width column */
   }
 
-  .lv-epp-card {
+  .powercable-card {
     width: 100%;
   }
 
@@ -2780,12 +2780,12 @@ section+section {
 /* solutions  */
 
 /* ================== SOLUTIONS ================== */
-.section-solutions-solar-system-solution {
+.section-solutions-powercable-solution {
   background: var(--bg-solar);
   padding: clamp(48px, 2vw, 40px) 0;
 }
 
-.solutions-head-solar-system-solution {
+.solutions-head-powercable-solution {
   display: grid;
   grid-template-columns: 2fr auto;
   gap: 14px;
@@ -2793,21 +2793,21 @@ section+section {
   margin-bottom: clamp(18px, 1vw, 28px);
 }
 
-.solutions-kicker-solar-system-solution {
+.solutions-kicker-powercable-solution {
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
   margin: 0 0 6px;
 }
 
-.solutions-title-solar-system-solution {
+.solutions-title-powercable-solution {
   margin: 0;
   color: var(--ink-solar);
   font-weight: 800;
   font-size: clamp(22px, 3.6vw, 34px);
 }
 
-.solutions-viewall-btn-solar-system-solution {
+.solutions-viewall-btn-powercable-solution {
   justify-self: end;
   padding: 10px 14px;
   font-weight: 600;
@@ -2819,33 +2819,33 @@ section+section {
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 
-.solutions-viewall-btn-solar-system-solution:hover {
+.solutions-viewall-btn-powercable-solution:hover {
   background: var(--teal-700-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
 /* collapse control for the grid (keeps your class names) */
-.is-collapsed-solar-system-solution .extra-card-solar-system-solution {
+.is-collapsed-powercable-solution .extra-card-powercable-solution {
   display: none;
 }
 
 /* small spacing for the intro under the headline */
-.solutions-intro-solar-system-solution {
+.solutions-intro-powercable-solution {
   margin-top: 0.75rem;
   display: grid;
   gap: .75rem;
 }
 
 /* tidy bullets inside cards */
-.card-points-solar-system-solution {
+.card-points-powercable-solution {
   margin: .5rem 0 0 1.1rem;
   padding: 0;
   line-height: 1.5;
 }
 
 /* highlights (after the 8 points) */
-.lv-highlights-solar-system-solution {
+.lv-highlights-powercable-solution {
   margin-top: 2rem;
   border: 1px solid rgba(0, 0, 0, .08);
   border-radius: 12px;
@@ -2853,7 +2853,7 @@ section+section {
   background: #fff;
 }
 
-.lv-highlights-solar-system-solution h3 {
+.lv-highlights-powercable-solution h3 {
   margin: 0 0 .5rem 0;
 }
 
@@ -2878,19 +2878,19 @@ section+section {
 }
 
 /* Grid */
-.grid-solutions-solar-system-solution {
+.grid-solutions-powercable-solution {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: clamp(14px, 3vw, 24px);
 }
 
 /* Show only first row by default (3 cards) */
-.grid-solutions-solar-system-solution.is-collapsed-solar-system-solution .extra-card-solar-system-solution {
+.grid-solutions-powercable-solution.is-collapsed-powercable-solution .extra-card-powercable-solution {
   display: none;
 }
 
 /* Card */
-.card-solar-system-solution {
+.card-powercable-solution {
   background: #fff;
   border: 1px solid rgba(21, 94, 117, .18);
   /* cyan-ish border, very light */
@@ -2903,13 +2903,13 @@ section+section {
   transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 
-.card-solar-system-solution:hover {
+.card-powercable-solution:hover {
   border-color: var(--teal-700-solar);
   transform: translateY(-3px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, .08);
 }
 
-.card-icon-solar-system-solution {
+.card-icon-powercable-solution {
   width: 42px;
   height: 42px;
   border-radius: 10px;
@@ -2922,19 +2922,19 @@ section+section {
   box-shadow: 0 10px 22px rgba(15, 118, 110, .25);
 }
 
-.card-icon-solar-system-solution i {
+.card-icon-powercable-solution i {
   font-size: 22px;
   line-height: 1;
 }
 
-.card-title-solar-system-solution {
+.card-title-powercable-solution {
   margin: 0 0 6px;
   font-size: clamp(16px, 2.2vw, 18px);
   font-weight: 800;
   color: var(--ink-solar);
 }
 
-.card-text-solar-system-solution {
+.card-text-powercable-solution {
   margin: 0 0 12px;
   color: var(--muted-solar);
   line-height: 1.65;
@@ -2942,7 +2942,7 @@ section+section {
 }
 
 /* Link CTA pinned to bottom */
-.card-link-solar-system-solution {
+.card-link-powercable-solution {
   margin-top: auto;
   align-self: flex-start;
   display: inline-flex;
@@ -2957,17 +2957,17 @@ section+section {
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 
-.card-link-solar-system-solution:hover {
+.card-link-powercable-solution:hover {
   background: var(--cyan-800-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
 /* Reveal directions (slow) */
-.reveal-left-solar-system-solution,
-.reveal-right-solar-system-solution,
-.reveal-top-solar-system-solution,
-.reveal-bottom-solar-system-solution {
+.reveal-left-powercable-solution,
+.reveal-right-powercable-solution,
+.reveal-top-powercable-solution,
+.reveal-bottom-powercable-solution {
   opacity: 0;
   transform: translate3d(0, 0, 0);
   transition: opacity 1.05s cubic-bezier(.2, .65, .2, 1),
@@ -2975,26 +2975,26 @@ section+section {
   will-change: opacity, transform;
 }
 
-.reveal-left-solar-system-solution {
+.reveal-left-powercable-solution {
   transform: translateX(-26px);
 }
 
-.reveal-right-solar-system-solution {
+.reveal-right-powercable-solution {
   transform: translateX(26px);
 }
 
-.reveal-top-solar-system-solution {
+.reveal-top-powercable-solution {
   transform: translateY(-26px);
 }
 
-.reveal-bottom-solar-system-solution {
+.reveal-bottom-powercable-solution {
   transform: translateY(26px);
 }
 
-.in-view-solar-system.reveal-left-solar-system-solution,
-.in-view-solar-system.reveal-right-solar-system-solution,
-.in-view-solar-system.reveal-top-solar-system-solution,
-.in-view-solar-system.reveal-bottom-solar-system-solution {
+.in-view-powercable.reveal-left-powercable-solution,
+.in-view-powercable.reveal-right-powercable-solution,
+.in-view-powercable.reveal-top-powercable-solution,
+.in-view-powercable.reveal-bottom-powercable-solution {
   opacity: 1;
   transform: none;
 }
@@ -3002,10 +3002,10 @@ section+section {
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-solar-system-solution,
-  .reveal-right-solar-system-solution,
-  .reveal-top-solar-system-solution,
-  .reveal-bottom-solar-system-solution {
+  .reveal-left-powercable-solution,
+  .reveal-right-powercable-solution,
+  .reveal-top-powercable-solution,
+  .reveal-bottom-powercable-solution {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -3014,22 +3014,22 @@ section+section {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .grid-solutions-solar-system-solution {
+  .grid-solutions-powercable-solution {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .solutions-head-solar-system-solution {
+  .solutions-head-powercable-solution {
     grid-template-columns: 1fr;
     align-items: start;
   }
 
-  .solutions-viewall-btn-solar-system-solution {
+  .solutions-viewall-btn-powercable-solution {
     justify-self: start;
   }
 }
 
 @media (max-width: 560px) {
-  .grid-solutions-solar-system-solution {
+  .grid-solutions-powercable-solution {
     grid-template-columns: 1fr;
   }
 }
@@ -3137,18 +3137,18 @@ section+section {
 }
 
 /* show only 2 cards when collapsed */
-#solutions-grid-solar-system-solution.is-collapsed-solar-system-solution .card-solar-system-solution:nth-of-type(3) {
+#solutions-grid-powercable-solution.is-collapsed-powercable-solution .card-powercable-solution:nth-of-type(3) {
   display: none;
 }
 
 /* center the "View LV Switchboards" button */
-.solutions-viewall-btn-solar-system-solution {
+.solutions-viewall-btn-powercable-solution {
   justify-self: center;
   margin-top: 1.25rem;
 }
 
 /* make list items real bullets inside cards */
-.card-points-solar-system-solution {
+.card-points-powercable-solution {
   list-style: disc;
   padding-left: 1.3rem;
 }
@@ -3157,7 +3157,7 @@ section+section {
 
 
 
-.container-lv-electrical-process {
+.container-powercable-process {
   width: 100%;
   max-width: 1100px;
   margin-inline: auto;
@@ -3167,36 +3167,36 @@ section+section {
 /* === MOBILE LAYOUT: stack image + copy on top, timeline below === */
 @media (max-width: 768px) {
   /* one column stack */
-  .grid-lv-electrical-process {
+  .grid-powercable-process {
     grid-template-columns: 1fr;
   }
 
   /* add a bit of space between image block and timeline */
-  .timeline-lv-electrical-process {
+  .timeline-powercable-process {
     margin-top: 24px;
   }
 
   /* keep timeline aligned nicely on small screens */
-  .timeline-list-lv-electrical-process::before {
+  .timeline-list-powercable-process::before {
     left: 28px;
   }
 
-  .timeline-item-lv-electrical-process {
+  .timeline-item-powercable-process {
     grid-template-columns: 44px 1fr;
   }
 }
 /* === MOBILE PADDING FIX (20px all around) === */
 @media (max-width: 768px) {
-  .section-process-lv-electrical-process {
+  .section-process-powercable-process {
     padding: 20px !important;
   }
 
-  .container-lv-electrical-process {
+  .container-powercable-process {
     padding: 20px !important;
   }
 
-  .intro-lv-electrical-process,
-  .timeline-lv-electrical-process {
+  .intro-powercable-process,
+  .timeline-powercable-process {
     padding: 0 0; /* keep inner spacing controlled */
   }
 }
@@ -3204,35 +3204,35 @@ section+section {
 @media (max-width: 640px) {
 
   /* Let the section span full width on phones */
-  .lv-electric-panel-project {
+  .powercable-project {
     padding-left: 0;
     padding-right: 0;
   }
 
   /* Container fills the viewport with small, even padding */
-  .lv-epp-container {
+  .powercable-container {
     max-width: none;
     margin: 0;
     padding-inline: 12px;  /* equal left/right gutter */
   }
 
   /* One card per row, full width */
-  .lv-epp-grid {
+  .powercable-grid {
     grid-template-columns: 1fr;
     justify-items: stretch;
   }
 
-  .lv-epp-card {
+  .powercable-card {
     width: 100%;
     margin-inline: 0;      /* no extra space on the right */
   }
 
   /* Make sure the media fills the card width with no inner gap */
-  .lv-epp-media {
+  .powercable-media {
     width: 100%;
   }
 
-  .lv-epp-media img {
+  .powercable-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;

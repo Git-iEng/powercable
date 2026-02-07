@@ -19,7 +19,7 @@
         </aside>
         {% endif %}
         <!-- Right side: the form -->
-        <div class="consult-form">
+        <div class="consult-form reveal-up">
             {# Optional: the old server messages will be converted to toasts in JS #}
             {% if messages %}
             {% for m in messages %}
@@ -27,7 +27,7 @@
             {% endfor %}
             {% endif %}
 
-            <h3 class="consult-form__title">Send a message</h3>
+            <h3 class="consult-form__title reveal-up">Send a message</h3>
 
             <form id="consult-form" class="consult-grid" method="post" action="{% url 'cmmsApp:contact_submit' %}"
                 novalidate>
@@ -49,13 +49,13 @@
 
                 <!-- <select name="service" aria-label="Select Services" required>
                     <option value="" selected disabled>Select Services *</option> -->
-                    <!-- <option>NEPLAN Electricity</option> -->
-                    <!-- <option>NEPLAN Electricity</option>
-                    <option>NEPLAN Gas, Water and Heating</option>
-                    <option>NEPLAN Anywhere</option>
-                    <option>NEPLAN Asset Management</option>
-                    <option>NEPLAN OEM / SaS Webservice</option>
-                    <option>NEPLAN  Research</option>
+                    <!-- <option>powercable Electricity</option> -->
+                    <!-- <option>powercable Electricity</option>
+                    <option>powercable Gas, Water and Heating</option>
+                    <option>powercable Anywhere</option>
+                    <option>powercable Asset Management</option>
+                    <option>powercable OEM / SaS Webservice</option>
+                    <option>powercable  Research</option>
                     <option>Additional CLoud</option>
                     <option>Additional Solutions</option>
                 </select> -->
